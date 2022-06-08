@@ -1,0 +1,13 @@
+{
+  "name": "file-manager",
+  "version": "1.0.0",
+  "description": "rs school task",
+  "main": "index.js",
+  "author": "borovko28@gmail.com",
+  "license": "MIT",
+  "private": false,
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  }
+}
