@@ -1,12 +1,9 @@
-import { appendFile, open } from "fs/promises";
+import { stdin } from "process";
+import authentication from "./authentication.js";
 
-const create = async () => {
-  try {
-    await open("./fresh.txt", "wx");
-    const content = "I am fresh and young";
-    await appendFile("fresh.txt", content);
-  } catch (err) {
-    throw new Error("FS operation failed");
-  }
+const start = async () => {
+  stdin.resume();
+  authentication();
 };
-create();
+
+start();

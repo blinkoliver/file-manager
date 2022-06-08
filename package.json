@@ -8,6 +8,6 @@
   "private": false,
   "type": "module",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js -- --username=superUser"
   }
 }
