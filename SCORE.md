@@ -23,12 +23,12 @@ Basic Scope
 - +6 Get current system user name (Do not confuse with the username that is set when the application starts)
 - +6 Get CPU architecture for which Node.js binary has compiled
   Hash calculation implemented properly
-  +20 Calculate hash for file
+- +20 Calculate hash for file
   Compress and decompress operations
   +20 Compress file (using Brotli algorithm)
   +20 Decompress file (using Brotli algorithm)
   Advanced Scope
-  +50 All files operations with reading/writing should be performed using Streams API
+- - +50 All files operations with reading/writing should be performed using Streams API
 - +20 Codebase is written in ESM modules instead of CommonJS
 - +20 Codebase is separated (at least 7 modules)
   Forfeits

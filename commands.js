@@ -9,4 +9,7 @@ export const commands = [
   "mv",
   "rm",
   "os",
+  "hash",
+  "compress",
+  "decompress",
 ];

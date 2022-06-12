@@ -1,6 +1,9 @@
 import { up, cd, ls } from "./navigation.js";
 import { cat, add, rn, cp, mv, rm } from "./basicOperations.js";
 import { os } from "./os.js";
+import { hash } from "./hash.js";
+import { compress, decompress } from "./zip.js";
+
 const actions = {
   up: up,
   cd: cd,
@@ -12,17 +15,8 @@ const actions = {
   mv: mv,
   rm: rm,
   os: os,
-  hash: () => {
-    return "create hash function";
-  },
-  compress: () => {
-    return "compress function";
-  },
-  decompress: () => {
-    return "decompress function";
-  },
-  default: () => {
-    throw new Error("error from actions");
-  },
+  hash: hash,
+  compress: compress,
+  decompress: decompress,
 };
 export default actions;

@@ -14,9 +14,6 @@ const start = async () => {
     const action = inputArr[0];
     const value = inputArr[1];
     const value2 = inputArr[2];
-    // console.log("action-", action);
-    // console.log("value-", value);
-    // console.log("value2-", value2);
     if (commands.includes(action) && value && !value2) {
       //run function with one param
       const result = await actions[action](value);
@@ -39,8 +36,6 @@ const start = async () => {
       console.log("Command not exist");
     }
     console.log(`You are currently ${currentDir}`);
-    // const currentFilename = import.meta.url;
-    // const currentDirname = path.dirname(currentFilename).replace("file://", "");
   };
   stdin.on("data", parseData);
 };
