@@ -14,15 +14,25 @@ const start = async () => {
     const inputArr = userInput.toString().trim().split(" ");
     const action = inputArr[0];
     const value = inputArr[1];
+    const value2 = inputArr[2];
     // console.log("action-", action);
     // console.log("value-", value);
-    if (commands.includes(action) && value) {
+    // console.log("value2-", value2);
+    if (commands.includes(action) && value && !value2) {
+      //run function with one param
       const result = await actions[action](value);
       if (result) {
         currentDir = result;
       }
-    } else if (commands.includes(action)) {
+    } else if (commands.includes(action) && !value && !value2) {
+      //run function without params
       const result = await actions[action]();
+      if (result) {
+        currentDir = result;
+      }
+    } else if (commands.includes(action) && value2) {
+      //run function with two params
+      const result = await actions[action](value, value2);
       if (result) {
         currentDir = result;
       }

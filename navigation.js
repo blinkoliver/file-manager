@@ -26,7 +26,6 @@ export const ls = async () => {
     try {
       const files = await readdir(currentDir);
       console.table(files.flat());
-      return null;
     } catch (error) {
       throw error;
     }

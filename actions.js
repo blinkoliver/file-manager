@@ -1,26 +1,15 @@
 import { up, cd, ls } from "./navigation.js";
+import { cat, add, rn, cp, mv, rm } from "./basicOperations.js";
 const actions = {
   up: up,
   cd: cd,
   ls: ls,
-  cat: () => {
-    return "read and print function";
-  },
-  add: () => {
-    return "add new file function";
-  },
-  rn: () => {
-    return "rename function";
-  },
-  copy: () => {
-    return "copy function";
-  },
-  mv: () => {
-    return "mv function";
-  },
-  rm: () => {
-    return "rm function";
-  },
+  cat: cat,
+  add: add,
+  rn: rn,
+  cp: cp,
+  mv: mv,
+  rm: rm,
   os: () => {
     return "os function";
   },
