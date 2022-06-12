@@ -1,7 +1,6 @@
 import { stdin } from "process";
 import authentication from "./authentication.js";
 import actions from "./actions.js";
-import path from "path";
 import { homedir } from "os";
 import { commands } from "./commands.js";
 

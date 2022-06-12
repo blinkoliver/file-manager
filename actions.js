@@ -1,5 +1,6 @@
 import { up, cd, ls } from "./navigation.js";
 import { cat, add, rn, cp, mv, rm } from "./basicOperations.js";
+import { os } from "./os.js";
 const actions = {
   up: up,
   cd: cd,
@@ -10,9 +11,7 @@ const actions = {
   cp: cp,
   mv: mv,
   rm: rm,
-  os: () => {
-    return "os function";
-  },
+  os: os,
   hash: () => {
     return "create hash function";
   },

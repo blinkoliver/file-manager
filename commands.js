@@ -8,4 +8,5 @@ export const commands = [
   "cp",
   "mv",
   "rm",
+  "os",
 ];

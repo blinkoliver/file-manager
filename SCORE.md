@@ -17,11 +17,11 @@ Basic Scope
 - +10 Move file
 - +10 Delete file
   Operating system info (prints following information in console) implemented properly
-  +6 Get EOL (default system End-Of-Line)
-  +10 Get host machine CPUs info (overall amount of CPUS plus model and clock rate (in GHz) for each of them)
-  +6 Get home directory
-  +6 Get current system user name (Do not confuse with the username that is set when the application starts)
-  +6 Get CPU architecture for which Node.js binary has compiled
+- +6 Get EOL (default system End-Of-Line)
+- +10 Get host machine CPUs info (overall amount of CPUS plus model and clock rate (in GHz) for each of them)
+- +6 Get home directory
+- +6 Get current system user name (Do not confuse with the username that is set when the application starts)
+- +6 Get CPU architecture for which Node.js binary has compiled
   Hash calculation implemented properly
   +20 Calculate hash for file
   Compress and decompress operations
